@@ -1,3 +1,4 @@
+#Function for making the Cache Matrix
 makeCacheMatrix <- function(x = matrix()){
   m <- NULL
   set <- function(y) {
@@ -12,6 +13,7 @@ makeCacheMatrix <- function(x = matrix()){
        getinverse = getinverse)
 }
 
+#Functon for solving the Matrix that created from the previous function
 cacheSlove<- function(x, ...) {
   m <- x$getinverse()
   if(!is.null(m)) {
